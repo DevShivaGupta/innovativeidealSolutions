@@ -1,0 +1,99 @@
+.our_works {
+  @media (max-width: 650px) {
+    max-width: 90% !important;
+  }
+}
+.album_box {
+  position: relative;
+  background-color: rgb(0, 71, 103);
+  border-radius: 5px;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  @media (max-width: 650px) {
+    height: 400px;
+    width: 100%;
+  }
+}
+
+.album_box .caption {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  cursor: pointer;
+  background-color: rgb(0, 71, 103);
+}
+
+.album_box .caption h3 {
+  margin: 0;
+}
+
+.album_box:hover .img_box:before {
+  opacity: 1;
+  transition: all 0s;
+}
+
+.album_box:hover .img_box img {
+  opacity: 0.8;
+}
+
+.album_box .caption {
+  left: 30px;
+  border-left-style: solid;
+  border-left-width: 2px;
+  padding: 5px 15px;
+  min-width: 50%;
+  border-radius: 3px;
+  transition: all 0.5s;
+  border-color: #03bfcb;
+}
+
+.album_box:hover .caption {
+  border-left-width: 8px;
+}
+
+.album_box .img_box:before {
+  display: none;
+}
+
+.album_box img {
+  opacity: 0.7;
+}
+
+.album_box:hover .img_box img {
+  opacity: 1;
+}
+
+.album_box .caption h3 {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.img_box {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.img_box:hover:before {
+  transition: all 0s;
+}
+
+.img_box:hover,
+.img_box:hover:before {
+  opacity: 1;
+}
+.img_box img {
+  width: 100%;
+  display: block;
+  position: relative;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.img_scale:hover img {
+  animation: scale 0.5s;
+  transform: scale(1.2);
+}
